@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Glance BI",
+  "description": "High-performance, minimalist open-source BI. Privacy-first, AI-ready, mobile-responsive dashboards for small businesses, featuring simple onboarding and elite developer experience.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

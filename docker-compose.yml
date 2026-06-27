@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  aperture-engine:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: aperture-analytics:latest
+    container_name: aperture_engine_platform
+    ports:
+      - "8000:8000"
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=sqlite:////app/data/aperture_telemetry.db
+      - DATA_DIR=/app/data
+    volumes:
+      - aperture_data:/app/data
+    restart: unless-stopped
+
+volumes:
+  aperture_data:
